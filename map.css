@@ -1,0 +1,39 @@
+body {
+    display: flex;
+    width: 80%;
+    justify-content: center;
+}
+.border {
+    stroke: #313449;
+    stroke-width: 0.5;
+    stroke-opacity: 0.5;
+}
+
+.country {
+    fill: #EBE4F1;
+}
+
+.light-water {
+    fill: #9DE7FB;
+}
+
+.disputed {
+    fill: #888;
+}
+
+
+
+#map .svg-holder {
+    background-color:#9DE7FB;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#svg2 {
+    width: 100%;
+    height: 100%;
+    padding: 0.5em;
+}
+

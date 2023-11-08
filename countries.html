@@ -1,0 +1,1108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How Many Countries Can You Name?></title>
+    <link rel="stylesheet" href="countries.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700">
+</head>
+
+<body>
+    <header>
+        <h1>How Many Countries Can You Name in 15 Minutes?</h1>
+    </header>
+    <main>
+        <section id="game-control">
+            <div id="controlbts">
+                <button class="control" id="start">Begin Count</button>
+                <button class="control" id="stop" disabled>Stop Timer</button>
+            </div>
+            <div id="entername">
+                <form>
+                    <input type="text" id="countryname" name="countryname" placeholder="Country Name">
+                    <button type="submit" id="submitbtn">Submit</button>
+                </form>
+            </div>
+            <div id="stats">
+                <div class="stats" id="score">
+                    <span class="stat-description">current score</span>
+                    <span class="stat-value">0/196</span>
+                </div>
+                <div class="stats" id="time">
+                    <span class="stat-description">time remaining</span>
+                    <span class="stat-value">15:00</span>
+                </div>
+            </div>
+        </section>
+
+        <section id="guidelines">
+            <ul>
+                <li>Use the common English name of the country</li>
+                <li>The country has to be a sovereign nation</li>
+            </ul>
+        </section>
+
+        <section id="map">
+            <img src="vecteezy_world-map-background-grey-color-with-national-borders_10158602.jpg" alt="">
+        </section>
+        
+
+        <section id="countries">
+            <div class="column">
+                <div class="continent" id="africa">
+                    <table>
+                        <tr>
+                            <th>Africa</th>
+                        </tr>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <div class="country" id="algeria"> Algeria </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="country" id="angola"> Angola </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="country" id="benin"> Benin </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="country" id="botswana"> Botswana </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="country" id="bfaso"> Burkina Faso </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="country" id="burundi"> Burundi </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="country" id="cameroon"> Cameroon </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="country" id="cverde"> Cape Verde </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="country" id="car"> Central African Republic </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="country" id="chad"> Chad </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="country" id="comoros"> Comoros </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="country" id="drc"> Democratic Republic of the Congo </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="country" id="djibouti"> Djibouti </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="country" id="egypt"> Egypt </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="country" id="eg"> Equatorial Guinea </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="country" id="eritrea"> Eritrea </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="country" id="eswatini"> Eswatini </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="country" id="ethiopia"> Ethiopia </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="country" id="gabon"> Gabon </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="country" id="gambia"> Gambia </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="country" id="ghana"> Ghana </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="country" id="guinea"> Guinea </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="country" id="gb"> Guinea Bissau </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="country" id="ic"> Ivory Coast </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="country" id="kenya"> Kenya </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="country" id="lesotho"> Lesotho </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="country" id="liberia"> Liberia </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="country" id="libya"> Libya </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="country" id="madagascar"> Madagascar </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="country" id="malawi"> Malawi </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="country" id="mali"> Mali </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="country" id="mauritania"> Mauritania </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="country" id="mauritius"> Mauritius </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="country" id="morocco"> Morocco </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="country" id="mozambique"> Mozambique </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="country" id="namibia"> Namibia </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="country" id="niger"> Niger </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="country" id="nigeria"> Nigeria </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="country" id="congo"> Republic of the Congo </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="country" id="rwanda"> Rwanda </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="country" id="saotome"> Sao Tome and Principe </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="country" id="senegal"> Senegal </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="country" id="seychelles"> Seychelles </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="country" id="sl"> Sierra Leone </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="country" id="somalia"> Somalia </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="country" id="sa"> South Africa </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="country" id="ss"> South Sudan </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="country" id="sudan"> Sudan </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="country" id="tanzania"> Tanzania </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="country" id="togo"> Togo </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="country" id="tunisia"> Tunisia </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="country" id="uganda"> Uganda </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="country" id="zambia"> Zambia </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="country" id="zimbabwe"> Zimbabwe </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="column">
+                <div class="continent" id="asia">
+                    <table>
+                        <tr>
+                            <th>Asia</th>
+                        </tr>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <div class="country" id="afghanistan"> Afghanistan </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="country" id="armenia"> Armenia </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="country" id="azerbaijan"> Azerbaijan </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="country" id="bahrain"> Bahrain </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="country" id="bangladesh"> Bangladesh </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="country" id="bhutan"> Bhutan </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="country" id="brunei"> Brunei </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="country" id="cambodia"> Cambodia </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="country" id="china"> China </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="country" id="cyprus"> Cyprus </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="country" id="et"> East Timor </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="country" id="georgia"> Georgia </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="country" id="india"> India </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="country" id="indonesia"> Indonesia </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="country" id="iran"> Iran </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="country" id="iraq"> Iraq </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="country" id="israel"> Israel </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="country" id="japan"> Japan </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="country" id="jordan"> Jordan </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="country" id="kazakhstan"> Kazakhstan </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="country" id="kuwait"> Kuwait </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="country" id="kyrgyzstan"> Kyrgyzstan </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="country" id="laos"> Laos </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="country" id="lebanon"> Lebanon </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="country" id="malaysia"> Malaysia </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="country" id="maldives"> Maldives </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="country" id="mongolia"> Mongolia </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="country" id="myanmar"> Myanmar </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="country" id="nepal"> Nepal </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="country" id="nk"> North Korea </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="country" id="oman"> Oman </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="country" id="pakistan"> Pakistan </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="country" id="philippines"> Philippines </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="country" id="qatar"> Qatar </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="country" id="sar"> Saudi Arabia </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="country" id="singapore"> Singapore </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="country" id="sk"> South Korea </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="country" id="slanka"> Sri Lanka </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="country" id="syria"> Syria </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="country" id="taiwan"> Taiwan </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="country" id="tajikistan"> Tajikistan </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="country" id="thailand"> Thailand </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="country" id="turkey"> Turkey </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="country" id="turkmenistan"> Turkmenistan </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="country" id="uae"> United Arab Emirates </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="country" id="uzbekistan"> Uzbekistan </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="country" id="vietnam"> Vietnam </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="country" id="yemen"> Yemen </div>
+                                </td>
+                            </tr>
+
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="column">
+                <div class="continent" id="europe">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Europe</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <div class="country" id="albania"> Albania </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="country" id="andorra"> Andorra </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="country" id="austria"> Austria </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="country" id="belarus"> Belarus </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="country" id="belgium"> Belgium </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="country" id="bosnia"> Bosnia and Herzegovina </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="country" id="bulgaria"> Bulgaria </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="country" id="croatia"> Croatia </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="country" id="czechia"> Czechia </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="country" id="denmark"> Denmark </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="country" id="estonia"> Estonia </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="country" id="finland"> Finland </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="country" id="france"> France </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="country" id="germany"> Germany </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="country" id="greece"> Greece </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="country" id="hungary"> Hungary </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="country" id="iceland"> Iceland </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="country" id="ireland"> Ireland </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="country" id="italy"> Italy </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="country" id="kosovo"> Kosovo </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="country" id="latvia"> Latvia </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="country" id="liechtenstein"> Liechtenstein </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="country" id="lithuania"> Lithuania </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="country" id="luxembourg"> Luxembourg </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="country" id="malta"> Malta </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="country" id="moldova"> Moldova </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="country" id="monaco"> Monaco </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="country" id="montenegro"> Montenegro </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="country" id="netherlands"> Netherlands </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="country" id="macedonia"> North Macedonia </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="country" id="norway"> Norway </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="country" id="poland"> Poland </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="country" id="portugal"> Portugal </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="country" id="romania"> Romania </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="country" id="russia"> Russia </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="country" id="sm"> San Marino </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="country" id="serbia"> Serbia </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="country" id="slovakia"> Slovakia </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="country" id="slovenia"> Slovenia </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="country" id="spain"> Spain </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="country" id="sweden"> Sweden </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="country" id="switzerland"> Switzerland </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="country" id="ukraine"> Ukraine </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="country" id="uk"> United Kingdom </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="country" id="vatican"> Vatican City </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="column">
+                <div class="continent" id="namerica">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>North America</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <div class="country" id="ab"> Antigua and Barbuda </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="country" id="bahamas"> Bahamas </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="country" id="barbados"> Barbados </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="country" id="belize"> Belize </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="country" id="canada"> Canada </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="country" id="cr"> Costa Rica </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="country" id="cuba"> Cuba </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="country" id="dominica"> Dominica </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="country" id="dr"> Dominican Republic </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="country" id="salvador"> El Salvador </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="country" id="grenada"> Grenada </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="country" id="guatemala"> Guatemala </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="country" id="haiti"> Haiti </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="country" id="honduras"> Honduras </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="country" id="jamaica"> Jamaica </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="country" id="mexico"> Mexico </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="country" id="nicaragua"> Nicaragua </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="country" id="panama"> Panama </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="country" id="skn"> Saint Kitts and Nevis </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="country" id="slucia"> Saint Lucia </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="country" id="svg"> Saint Vincent and the Grenadines </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="country" id="tt"> Trinidad and Tobago </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="country" id="usa"> United States </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="column">
+                <div class="continent" id="samerica">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>South America</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <div class="country" id="argentina"> Argentina </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="country" id="bolivia"> Bolivia </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="country" id="brazil"> Brazil </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="country" id="chile"> Chile </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="country" id="colombia"> Colombia </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="country" id="ecuador"> Ecuador </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="country" id="guyana"> Guyana </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="country" id="paraguay"> Paraguay </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="country" id="peru"> Peru </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="country" id="suriname"> Suriname </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="country" id="uruguay"> Uruguay </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="country" id="venezuela"> Venezuela </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="continent" id="australasia">
+                    <table>
+                        <tr>
+                            <th>Australasia</th>
+                        </tr>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <div class="country" id="australia"> Australia </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="country" id="micronesia"> Federal States of Micronesia </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="country" id="fiji"> Fiji </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="country" id="kiribati"> Kiribati </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="country" id="mi"> Marshall Islands </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="country" id="nauru"> Nauru </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="country" id="nz"> New Zealand </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="country" id="palau"> Palau </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="country" id="png"> Papua New Guinea </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="country" id="samoa"> Samoa </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="country" id="si"> Solomon Islands </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="country" id="tonga"> Tonga </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="country" id="tuvalu"> Tuvalu </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="country" id="vanuatu"> Vanuatu </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>
