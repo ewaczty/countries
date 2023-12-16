@@ -1,52 +1,138 @@
-
-
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
 }
+
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
 }
+
 body {
-	line-height: 1;
+    line-height: 1;
 }
-ol, ul {
-	list-style: none;
+
+ol,
+ul {
+    list-style: none;
 }
-blockquote, q {
-	quotes: none;
+
+blockquote,
+q {
+    quotes: none;
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
 }
+
 table {
-	border-collapse: collapse;
-	border-spacing: 0;
+    border-collapse: collapse;
+    border-spacing: 0;
 }
 
 html {
-    font-family:Arial, Helvetica, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
 }
+
 body {
     background-image: url("Flag-map_of_the_world_(2018).png");
     background-repeat: no-repeat;
@@ -56,22 +142,22 @@ body {
     flex-direction: column;
     align-items: center;
 }
+
 header {
     width: 60%;
-    background-color: #08B2E3;
+    background-color: #63879D;
     padding: 0 1em;
-    border-left: 0.5px dotted #313449;
-    border-right: 0.5px dotted #313449;
-    border-bottom: 0.2px dotted #313449;
 
 }
+
 main {
     width: 60%;
     background-color: white;
     padding: 0 1em;
-    border-left: 0.5px dotted #313449;
-    border-right: 0.5px dotted #313449;
 }
+
+
+
 h1 {
     font-size: 2rem;
     text-align: center;
@@ -81,9 +167,10 @@ h1 {
     letter-spacing: 0.2em;
     line-height: 1.5;
 }
+
 #game-control {
     font-size: 1.5rem;
-    padding: 2em 0;
+    padding-top: 2em;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -92,18 +179,29 @@ h1 {
 .stat-description {
     text-transform: uppercase;
     font-size: 0.5em;
-    opacity: 0.5;
     color: #313449;
 }
+
 .stats {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
+
 .stat-value {
     padding-top: 0.5em;
     text-align: center;
     color: #313449;
+}
+
+.stat-label {
+    font-size: 0.8em;
+    background-color: #A9ADC6;
+    padding: 0.7em 0.5em;
+    border-radius: 0.5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #controlbts {
@@ -116,40 +214,54 @@ h1 {
 
 .control {
     border: 0.5px solid #313449;
-    color:#313449;
+    color: #313449;
     height: 40%;
-    border-radius: 1em;
     width: 50%;
-}
-
-
-#start {
-    background-color: #57A773;
-}
-#start:hover {
-    box-shadow: 0px 0px 1px 1px #313449;
-    background-color: #3F7853;
-    cursor: pointer;
-}
-#stop {
-    background-color: #EE6352;
     opacity: 0.8;
-    
+    border-radius: 2em;
 }
+
+
+.start {
+    background-color: #4D9369;
+}
+
+.active {
+    opacity: 1;
+}
+
+.active:hover {
+    box-shadow: 0px 0px 2px 2px #313449;
+    cursor: pointer;
+    opacity: 1;
+}
+
+.stop {
+    background-color: #EE6352;
+}
+
 
 #entername {
     width: 50%;
     height: 1.5em;
     padding: 1.5em 0;
     display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: baseline;
+}
+#message {
+    width: 60%;
+    padding-top: 0.5em;
+    padding-left: 0.5em;
+    text-transform: uppercase;
+    font-size: 0.6em;
 }
 
 #entername form {
     width: 100%;
 }
+
 #entername form input {
     height: 1.5em;
 }
@@ -164,13 +276,14 @@ h1 {
 }
 
 #countries {
-    display:flex;
+    display: flex;
     flex-direction: row;
     flex-flow: row wrap;
     justify-content: space-evenly;
     align-items: baseline;
     margin-bottom: 10%;
 }
+
 .continent {
     width: 170px;
     background-color: white;
@@ -178,6 +291,7 @@ h1 {
     flex-direction: row;
     justify-content: center;
 }
+
 .continent th {
     text-align: center;
     text-transform: uppercase;
@@ -187,12 +301,14 @@ h1 {
     padding: 1em 0;
     border: 1px solid #20063B;
 }
+
 .continent td {
     text-align: center;
     color: #313449;
     padding: 0.5em 0;
     border: 1px solid #20063B;
 }
+
 .continent table {
     width: 100%;
 }
@@ -209,19 +325,53 @@ h1 {
     margin-right: 10%;
 }
 
-#guidelines li {
+.display-under-form {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
     font-family: inherit;
     font-size: 0.9rem;
     font-style: italic;
-    line-height: 1.5;
+    line-height: 2;
     letter-spacing: 0.1em;
 }
-
-#guidelines {
-    padding-bottom: 2em;
-    display: flex;
-    justify-content: center;
+#scores, #guidelines {
+    width: 50%;
+    padding: 2em 0;
 }
+#scores {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #EE6352;
+    background-color: #F9CDC7;
+    margin-bottom: 1em;
+}
+#guidelines li {
+    padding-left: 1em;
+}
+
+#try-again-btn {
+    margin-top: 2em;
+    padding: 1em;
+    background-color:#A9ADC6;
+    color:#313449;
+    border-radius: 2em;
+    border: 0.5px dotted #313449;
+}
+#try-again-btn:hover {
+   cursor: pointer;
+}
+
+#final-message {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 1.5em;
+    color: #EE6352;
+}
+
+
 #submitbtn {
     background-color: #EFE9F4;
     color: #313449;
@@ -231,9 +381,11 @@ h1 {
     width: 20%;
     transition: background-color 0.5s ease-in-out;
 }
-#submitbtn:hover, #submitbtn:active {
+
+#submitbtn:hover,
+#submitbtn:active {
     background-color: #9D77BB;
-    cursor:pointer;
+    cursor: pointer;
 }
 
 #countryname {
@@ -245,25 +397,47 @@ h1 {
     width: 100%;
     display: flex;
     justify-content: center;
+    margin-bottom: 1em;
 }
-#map img {
+
+#map svg {
+    background-color:#B9DDF4;
     width: 90%;
-    margin: 1em;
-    border: 2px inset #313449;
+    border: 1px solid #020789;
+    height: 100;
+    stroke: black;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-width: 0.2;
+
 }
+
 #australasia {
     margin-top: 3em;
 }
 
+.invisible {
+    visibility: hidden;
+}
+
+#map path, #map circle {
+    fill: #EBE4F1;
+}
+
+#map .disputed {
+    fill: #A9ADC6;
+}
 
 
-@media (max-width: 1750px){
+@media (max-width: 1750px) {
     header {
         width: 80%;
     }
+
     main {
         width: 80%;
     }
+
     header h1 {
         font-size: 1.5rem;
         letter-spacing: 0;
@@ -274,38 +448,54 @@ h1 {
     header {
         width: 100%;
     }
+
     header h1 {
         font-size: 1rem;
         letter-spacing: 0;
     }
+
     main {
         width: 100%;
     }
 }
 
-@media (max-width: 650px){
+@media (max-width: 800px) {
+    #scores {
+        width: 70%;
+    }
+    #guidelines {
+        width: 70%;
+    }
+}
+@media (max-width: 650px) {
     #game-control {
         flex-direction: column;
         align-items: center;
     }
+
     #controlbts {
         width: 70%;
         height: 3em;
     }
+
     #stats {
         width: 70%;
     }
+
     .control {
         width: 100%;
     }
+
     #start {
-        background-color:#3F7853;
+        background-color: #3F7853;
         color: white;
     }
+
     #entername {
         width: 70%;
         height: 20%;
     }
+
     #entername form {
         width: 100%;
         height: 100%;
@@ -314,8 +504,9 @@ h1 {
         justify-content: space-evenly;
         align-items: center;
     }
+
     #submitbtn {
-        background-color:#9D77BB;
+        background-color: #9D77BB;
         text-align: center;
         display: block;
         margin-top: 10%;
@@ -325,4 +516,3 @@ h1 {
     }
 
 }
-
